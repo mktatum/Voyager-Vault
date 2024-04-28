@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import authenticationController from './controllers/authentication.js';
 import defineCurrentUser from './middleware/defineCurrentUser.js';
 import countryController from './controllers/country.js'; // Import the country controller
-import { sendFile } from "express/lib/response.js";
+
 
 dotenv.config()
 
@@ -16,6 +16,7 @@ const app = express();
 mongoose.connect(process.env.ATLAS_URI).then(() => {
     console.log('successfully connected');
 }).catch((e) => {
+    console.log(e)
     console.log('not connected');
 })
 
