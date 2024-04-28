@@ -6,6 +6,7 @@ import mongoose from "mongoose";
 import authenticationController from './controllers/authentication.js';
 import defineCurrentUser from './middleware/defineCurrentUser.js';
 import countryController from './controllers/country.js'; // Import the country controller
+import { sendFile } from "express/lib/response.js";
 
 dotenv.config()
 
@@ -28,6 +29,12 @@ app.use(express.json());
 app.use('/user', userController)
 app.use('/authentication', authenticationController)
 app.use('/country', countryController);
+
+// setup server for frontend deployment
+app.use(express.static('./dist'))
+app.get('*', (req, res) => {
+  return res.sendFile('./dist/index.html')
+})
 
 // start the Express server
 app.listen(PORT, () => {
