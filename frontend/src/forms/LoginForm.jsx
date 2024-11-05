@@ -21,7 +21,7 @@ function LoginForm({ show, handleClose, props }) {
             password
         }
     
-        fetch('http://localhost:5050/authentication/login', {
+        fetch(process.env.REACT_APP_BACKEND || "" + '/authentication/login', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
