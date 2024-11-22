@@ -1,6 +1,6 @@
 # Voyager Vault
 
-This is a project that lets you add countries you have been to in a list, you can also add countries you want to visit in the future to your "wishlist". We are using REST Countries API to pull country information such as population, and capitol city.
+This is a program that lets you keep countries you've visited to in a list, and you can keep countries you want to visit in the future in a Wish List. We're using the REST Countries API to retrieve country information such as population and capital city.
 
 ## Table of Contents
 
@@ -9,18 +9,19 @@ This is a project that lets you add countries you have been to in a list, you ca
 
 ## Installation
 
-npm start on both back and frontend.
+Run `npm install`.
 
-Step 1: Register and log in to your account
+Run `npm start` on both from the backend and frontend directories.
 
-Step 2: Search for a country, if you want to add this country to a place you wish to visit someday, add
-the country to your wish list. If you have already visited this country add this country to destinations!
+Step 1: Register and log in to your account.
 
-Step 3: you can view your countries you added to your wishlist in the wishlist tab, and view your countries
-you have already visited in you destinations tab.
+Step 2: Search for a country you want to visit someday then add it to your Wish List. If you've already visited the country, add it to Destinations!
 
-Step 4: Having trouble picking your next vacation? let us pick for you. In the search tab we have a random
-country generator.
+Step 3: You can view the countries you added to your Wish List in the Wish List tab, and you can view the countries
+you've already visited in the Destinations tab.
+
+Step 4: Having trouble picking your next vacation? Let us pick for you ... in the search tab we have a random
+country generator!
 
 ## Who Contributed
 
